@@ -3,10 +3,10 @@
 Run from anywhere:  python tools/build_assets.py
 
 Sources (relative to the Desktop folder that holds Marketing/ and the app repos):
-  Marketing/appstore/build/<app>/shots/      clean app screens (all already published on the App Store)
-  Marketing/App Store Screenshots/<App>/     the 10 finished App Store screenshots per app
-  Marketing/App Store Screenshots/<App>/Creative Assets/header.png   wide banner per app
-  Marketing/appstore/assets/                 app icons and fonts
+  Marketing/App Store Optimization/appstore/build/<app>/shots/      clean app screens (all already published on the App Store)
+  Marketing/App Store Optimization/App Store Screenshots/<App>/     the 10 finished App Store screenshots per app
+  Marketing/App Store Optimization/App Store Screenshots/<App>/Creative Assets/header.png   wide banner per app
+  Marketing/App Store Optimization/appstore/assets/                 app icons and fonts
   trivianight/trivia_dataset.csv             questions for the Trivial demo
   daily/assets/data/pico.db                  Wordform answers for the Pico demo
 
@@ -26,8 +26,8 @@ from PIL import Image
 SITE = Path(__file__).resolve().parent.parent
 MARKETING = SITE.parent
 DESKTOP = MARKETING.parent
-APPSTORE = MARKETING / "appstore"
-STORE_SHOTS = MARKETING / "App Store Screenshots"
+APPSTORE = MARKETING / "App Store Optimization" / "appstore"
+STORE_SHOTS = MARKETING / "App Store Optimization" / "App Store Screenshots"
 OUT = SITE / "assets"
 
 APPS = {"cents": "Cents", "lckdin": "Lckdin", "pico": "Pico", "trivial": "Trivial"}
